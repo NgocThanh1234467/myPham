@@ -1,0 +1,180 @@
+:root {
+    --color-text-nav: rgb(214, 212, 212);
+}
+
+.navbar-link {
+    color: var(--color-text-nav);
+}
+
+.navbar-link:hover {
+    color: #DB963C;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 30px;
+    display: block;
+    width: 50px;
+}
+
+.card {
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 5px rgb(59, 59, 59);
+    transform: scale(1.01);
+}
+
+.card-img-top {
+    padding-top: 10px;
+}
+
+.item {
+    margin-top: 10px;
+}
+
+.card .product-name {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.price-old {
+    text-decoration: line-through;
+}
+
+/* Phần css của giảm giá */
+.ribbon {
+    position: relative;
+}
+
+.ribbon2 {
+    width: 50px;
+    padding: 10px 0;
+    position: absolute;
+    top: -6px;
+    left: 25px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    background: red;
+    color: white;
+    font-size: 15px;
+}
+
+.ribbon2:before {
+    height: 0;
+    width: 0;
+    right: -5.5px;
+    top: 0.1px;
+    border-right: 6px solid transparent;
+}
+
+.ribbon2:before,
+.ribbon2:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon2:after {
+    height: 0;
+    width: 0;
+    bottom: -29.5px;
+    left: 0;
+    border-left: 25px solid red;
+    border-right: 25px solid red;
+    border-bottom: 30px solid transparent;
+}
+
+.border-bottom {
+    padding-left: 25px;
+    padding-right: 5px;
+    /* Thêm padding dưới cho phần border-bottom */
+}
+
+/* Loại bỏ thanh cuộn ngang */
+body {
+    overflow-x: hidden;
+}
+
+/* Sử dụng đơn vị đo linh hoạt cho container chính */
+.container-fluid {
+    width: 100%;
+}
+
+/* Sử dụng Flexbox cho header */
+header.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Thiết lập chiều rộng linh hoạt cho các phần tử trong header */
+header.row .col-md-1,
+header.row .col-md-8,
+header.row .col-md-3 {
+    flex: 1;
+}
+
+/* Thiết lập chiều rộng linh hoạt cho các phần tử trong footer */
+footer.text-muted.row section {
+    flex: 1;
+}
+
+/* Sử dụng đơn vị đo linh hoạt cho carousel */
+.carousel-inner .carousel-item {
+    width: 100%;
+}
+
+/* Thiết lập chiều rộng linh hoạt cho các phần tử trong carousel */
+.carousel-inner .carousel-item img {
+    width: 100%;
+}
+
+/* Sử dụng đơn vị đo linh hoạt cho các sản phẩm */
+#product-sales .item {
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    /* Khoảng cách giữa thanh tìm kiếm và logo */
+    width: 100%;
+    /* Đảm bảo thanh tìm kiếm mở rộng hết chiều rộng của header */
+}
+
+.search-input {
+    flex-grow: 1;
+    border-radius: 5px;
+    /* Điều chỉnh bo tròn của ô nhập liệu */
+    border: 1px solid #ccc;
+    /* Màu đường viền */
+    padding: 8px 40px 8px 12px;
+    /* Khoảng cách giữa nội dung và viền (40px để tạo chỗ cho logo) */
+    margin-bottom: 15px;
+}
+
+/* CSS để điều chỉnh kích thước của hình ảnh */
+.img-thumbnail {
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Xóa margin phía bên phải của hình cuối cùng để tránh khoảng cách thừa */
+.img-thumbnail:last-child {
+    margin-right: 0;
+}
+
+/* CSS để điều chỉnh khoảng cách giữa các hình ảnh */
+.d-flex>div {
+    margin-bottom: 15px;
+    /* Khoảng cách dưới giữa các hình ảnh */
+}
